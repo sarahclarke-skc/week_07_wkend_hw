@@ -38,8 +38,7 @@ const BreakingBadContainer = () => {
           if (character.char_id === char_id){
             character.favourite = !character.favourite
           }
-          return character
-
+          return character;
         })
 
         setCharacters(updatedCharacters)

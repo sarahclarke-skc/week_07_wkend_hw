@@ -1,19 +1,20 @@
 import React from 'react';
 
-const Character = ({character, onFavourite}) => { //character from here is undefined, meaning none of the return statement loads, so selectedCharacter function in the container can't be working
+const Character = ({character, onFavourite}) => { //the props character from here is undefined, meaning none of the return statement loads, so selectedCharacter function in the container can't be working
 
     if (!character) {
         return null
       }
 
     const handleClick = () => {
-        onFavourite(character.char_id)
+        onFavourite(character.char_id) //onFavourite also isn't working correcting, meaning handleFavourite isn't
     }
 
     // const pictureStyle = {
     //    height: '200px',
     //    width: 'auto'
     // }
+
 
     return (
         <>
